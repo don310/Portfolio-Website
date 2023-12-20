@@ -28,8 +28,8 @@
       .firstsection{
         display: flex;
         justify-content: space-around;
-        margin: 23px 0;
-        margin: 50px 0;
+        align-items: center;
+        margin: 130px 0;
       }
       
       .firstsection > div{
@@ -42,9 +42,6 @@
       .rightsection img{
         width: 80%;
        
-      }
-      .purple{
-        color: rgb(170, 107, 228);
       }
       nav{
         display: flex;
@@ -66,10 +63,31 @@
         color: white;
       }
       nav ul li a:hover{
-        color: rgb(153, 153, 226);
-        font-size: 4rem;
+        color: rgb(170, 107, 228);
+        font-size: 1.01rem;
       }
-      
+      main hr{
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .purple{
+        color: rgb(170, 107, 228);
+      }
+      #element{
+        color: rgb(170, 107, 228);
+      }
+      .secondsection{
+        max-width: 80vw;
+        margin: auto;
+      }
+      .secondsection h1{
+        font-size: 1.9rem;
+      }
+      .text-gray{
+        color: gray;
+      }
     </style>
   </head>
   <body>
@@ -93,13 +111,28 @@
                 Hi, My Name is <span class="purple">Deepak</span>
 
                 <div> and I am a passionate</div>
-                <div>Web Developer</div>
+                <span id="element"></span>
             </div>
             <div class="rightsection">
                 <img src="OIP.jpg" alt="">
             </div>
         </section>
+        <hr>  
+        <section class="secondsection">
+          <span class="text-gray"> What I have done so far</span>
+          <h>Work Experience</h>
+
+        <div class="box"></div>
+        </section>     
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphics Designer', 'Web Designer', 'Videos Editor'],
+      typeSpeed: 50,
+    });
+  </script>
   </body>
 </html>
 
